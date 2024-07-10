@@ -1,10 +1,12 @@
 /*********************************************************************************
-*  WEB700 – Assignment 03
+*  WEB700 – Assignment 04
 *  I declare that this assignment is my own work in accordance with Seneca  Academic Policy.  No part 
 *  of this assignment has been copied manually or electronically from any other source 
 *  (including 3rd party web sites) or distributed to other students.
 * 
-*  Name: Nicholas Nwanua Ilechie Student ID: 153461223 Date: June 15, 2024
+*  Name: Nicholas Nwanua Ilechie Student ID: 153461223 Date: Jul 10 2024
+*
+*  Online (Vercel) Link: https://college-data-manager-web-app.vercel.app/
 *
 ********************************************************************************/ 
 
@@ -16,6 +18,8 @@ const path = require('path'); // Import the path module
 const collegeData = require('./modules/collegeData'); // Import the collegeData module
 
 const app = express(); 
+
+app.set('views', __dirname + '/views');
 
 // Middleware to serve static files from the 'public' directory
 app.use(express.static('public'));
